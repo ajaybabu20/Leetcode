@@ -21,6 +21,7 @@ e.create-virtualenv:
 
 #env.install-python-dependencies: @ Installs development python dependencies
 env.install-python-dependencies:
+	$(venv_path)/bin/pip-compile $(req_path)requirements.in
 	$(venv_path)/bin/pip install -r $(req_path)requirements.txt
 
 #env.update: @ Updates all python dependencies

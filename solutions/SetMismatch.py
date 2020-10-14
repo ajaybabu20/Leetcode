@@ -1,25 +1,32 @@
+# -*- coding: utf-8 -*-
+"""Leetcode problem details are in the below link
+
+https://leetcode.com/problems/set-mismatch/submissions/
+
+The running time of this task is O(n^2) worst case scenario.
+
+"""
+from typing import List
+from collections import Counter
+
+
 class Solution:
-    def __init__(self):
-        self.missed = []
-        self.map = {}
-        self.repeated = []
+    """Provide class to define our functions/logic.
+    """
 
-    def findErrorNums(self, nums):
-        self.nums = nums
-        self.repeatedvalues = list(set(self.findrepeatvalues()))
-        self.missingvalue = self.findmissingvalue()
-        return self.repeatedvalues.append(self.missingvalue)
+    def findErrorNums(self, nums: List[int]) -> List:
+        """Provided function to define our logic and to get the result.
 
-    def findrepeatvalues(self):
-        for i in self.nums:
-            if i not in self.map:
-                self.map[i] = i
-            else:
-                self.repeated.append(i)
-        return self.repeated
+        Args:
+            nums: The provided error data.
 
-    def findmissingvalue(self):
-        for i in range(1, self.nums[-1] + 1):
-            if i not in self.map.keys():
-                self.missed.append(i)
-        return self.missed
+        Returns:
+            A list which provides required answer.
+
+        """
+        repeated = Counter(nums).most_common()[0][0]
+        for i in range(1, len(nums)+1):
+            if nums[i-1] != i:
+                missing = i
+                break
+        return [repeated, missing]
