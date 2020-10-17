@@ -2,10 +2,13 @@
 found in the link https://leetcode.com/problems/two-sum/.
 
 """
-from typing import List,Optional
+from typing import List
 
 
 class Solution:
+    """Solution class as followed in Leetcode
+
+    """
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         """To calculate the two sums challenge
 
@@ -23,4 +26,4 @@ class Solution:
             if target - value in nums:
                 if index != nums.index(target - value):
                     return sorted([index, nums.index(target - value)])
-        return List[int]
+        return [0]
