@@ -1,27 +1,29 @@
-from solutions.PalindromeNumber import  Solution
+from solutions.PalindromeNumber import Solution
+
 
 def test_numberone():
     x = 121
     expected = True
-    result = Solution().isPalindrome(x)
+    result = Solution().ispalindrome(x)
     assert result == expected
 
-def test_numberone():
+
+def test_numbertwo():
     x = -101
     expected = False
-    result = Solution().isPalindrome(x)
+    result = Solution().ispalindrome(x)
     assert result == expected
 
 
-def test_numberone():
+def test_numberthree():
     x = -121
     expected = False
-    result = Solution().isPalindrome(x)
+    result = Solution().ispalindrome(x)
     assert result == expected
 
 
-def test_numberone():
+def test_numberfour():
     x = 10
     expected = False
-    result = Solution().isPalindrome(x)
+    result = Solution().ispalindrome(x)
     assert result == expected
