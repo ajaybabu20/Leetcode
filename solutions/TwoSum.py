@@ -11,7 +11,7 @@ class Solution:
     """Solution class as followed in Leetcode
 
     """
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twosum(self, nums: List[int], target: int) -> List[int]:
         """To calculate the two sums challenge
 
         Args:
