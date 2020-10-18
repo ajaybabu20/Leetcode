@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# pylint: disable=R0201
 """Leetcode problem details are in the below link
 
 https://leetcode.com/problems/set-mismatch/submissions/
@@ -14,7 +15,7 @@ class Solution:
     """Provide class to define our functions/logic.
     """
 
-    def findErrorNums(self, nums: List[int]) -> List:
+    def finderrornums(self, nums: List[int]) -> List:
         """Provided function to define our logic and to get the result.
 
         Args:

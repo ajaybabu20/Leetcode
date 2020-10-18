@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# pylint: disable=R0201
 """Leetcode challenge the description and details about the challenge can be
 found in the link https://leetcode.com/problems/two-sum/.
 
