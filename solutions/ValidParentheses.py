@@ -36,8 +36,17 @@ class Solution:
         return True
 
     def check_stack(self, prev: str, par: str) -> bool:
+        """Checking the two strings
+
+        Args:
+            prev:Previous Parentheses
+            par: CUrrent Parentheses
+
+        Returns:
+            Boolean value between strings.
+        """
         if prev == "(":
             return par == ")"
-        elif prev == "{":
+        if prev == "{":
             return par == "}"
         return par == "]"
