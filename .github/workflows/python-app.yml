@@ -25,4 +25,4 @@ jobs:
         python -m pip install --upgrade tox
     - name: Do Pytest with tox
       run: |
-        tox -e pytest
+        tox -e unit
