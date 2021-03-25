@@ -1,7 +1,7 @@
 venv_path = .venv
 venv_bin = $(venv_path)/bin/
 req_path = requirements/
-
+nice
 #env.setup: @ Installs environment dependencies, creates virtual envi MLRD-63 Feature: ronment and installs dev python packages
 
 env.setup: e.install-apps e.create-virtualenv env.install-python-dependencies
