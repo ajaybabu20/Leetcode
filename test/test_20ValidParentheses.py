@@ -2,7 +2,7 @@ from solutions.ValidParentheses import Solution
 
 
 def test_numberone():
-    s = "("
+    s = "()"
     expected = True
     result = Solution().isvalid(s=s)
     assert result == expected
